@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Search Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="main-page">
+
+    <header class="hero-section">
+      <h1>Video Game Search Hub</h1>
+      <p class="sub-title">EXPLORE THE DATABASE, FIND YOUR NEXTGAME</p>
+    </header>
+
+    <!-- SEARCH HUB -->
+    <div class="search-hub">
+      <form class="search-bar" id="searchForm">
+        <input id="searchInput" type="text" placeholder="Search games..." aria-label="Search for games" autocomplete="off">
+        <button type="submit">SEARCH</button>
+      </form>
+
+      <!-- CATEGORY BUTTONS -->
+      <div class="challenges">
+        <button type="button" data-challenge="action" class="active">ACTION</button>
+        <button type="button" data-challenge="role-playing-games-rpg">RPG</button>
+        <button type="button" data-challenge="shooter">SHOOTER</button>
+        <button type="button" data-challenge="strategy">STRATEGY</button>
+        <button type="button" data-challenge="indie">INDIE</button>
+      </div>
+    </div>
+
+    <!-- LOADING SPINNING TEXT -->
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <span>LOADING...</span>
+    </div>
+
+    <!-- RESULTS GRID -->
+    <section id="results" class="results"></section>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
