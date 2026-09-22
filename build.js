@@ -8,7 +8,7 @@ if (!apiKey) {
 
 fs.writeFileSync(
   "config.js",
-  `const API_KEY = "${apiKey}";\n`
+  `const RAWG_API_KEY = "${apiKey}";\n`
 );
 
 console.log("config.js created successfully.");
